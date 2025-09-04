@@ -28,5 +28,8 @@ class ActivityBindingAdapter: AppCompatActivity() {
             startActivity(intent)
         }
         println("Hello")
+        println("Second commit")
+        println("Third commit")
+        println("Forth commit")
     }
 }
