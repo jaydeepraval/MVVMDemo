@@ -27,5 +27,7 @@ class ActivityBindingAdapter: AppCompatActivity() {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
+
+        println("Hello")
     }
 }
