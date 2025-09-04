@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout >
+
+    <data>
+
+        <variable
+            name="viewModels"
+            type="com.example.mvvmdemo.retrofitmvvm.viewmodels.LoginViewModel" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/pgBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/mEDPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="Enter Phone Number"
+            android:text="@={viewModels.username}"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/mEDPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="Enter Password"
+            android:text="@={viewModels.password}"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/mButtonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:onClick="@{() -> viewModels.performLogin()}"
+            android:text="Login" />
+    </LinearLayout>
+</layout>
