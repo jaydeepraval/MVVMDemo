@@ -27,6 +27,7 @@ class ActivityBindingAdapter: AppCompatActivity() {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
-        println("Hello")
+        println("Second commit")
+        println("Third commit")
     }
 }
