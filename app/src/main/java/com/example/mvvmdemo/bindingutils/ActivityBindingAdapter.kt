@@ -29,5 +29,6 @@ class ActivityBindingAdapter: AppCompatActivity() {
         }
         println("Second commit")
         println("Third commit")
+        println("Forth commit")
     }
 }
