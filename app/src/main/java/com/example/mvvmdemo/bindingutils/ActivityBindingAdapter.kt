@@ -185,6 +185,8 @@ fun sum(a: Double, b: Double): Double {
 fun calculator(a: Double, b: Double, gn: (Double, Double) -> Double) {
     val result = gn(a, b)
     println("Higher Order Fun: $result")
+    println("Complete works")
+    println("from new branch commit")
 }
 
 
